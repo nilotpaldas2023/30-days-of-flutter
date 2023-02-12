@@ -7,7 +7,8 @@ class MyTheme {
           color: Colors.white,
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.black),
-          titleTextStyle: TextStyle(color: Colors.black)));
+          toolbarTextStyle: Theme.of(context).textTheme.bodyMedium,
+          titleTextStyle: Theme.of(context).textTheme.titleLarge));
 
   static ThemeData darkTheme(BuildContext context) =>
       ThemeData(brightness: Brightness.dark);
